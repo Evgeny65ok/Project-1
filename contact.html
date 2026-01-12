@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Учебный сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🎓 Учебный сайт</h1>
+                <p>Евгений Белевитин | МФЮА</p>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="contact.html" class="active">Контакты</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact">
+            <h2>Контакты</h2>
+            
+            <div class="contact-info">
+                <h3>📧 Свяжитесь со мной</h3>
+                <p><strong>Студент:</strong> Евгений Белевитин</p>
+                <p><strong>Учебное заведение:</strong> МФЮА</p>
+                <p><strong>Проект:</strong> Учебный сайт на GitHub Pages</p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Форма обратной связи</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Отправить</button>
+                    <button type="button" onclick="clearForm()">Очистить</button>
+                </form>
+                <div id="formMessage" class="message"></div>
+            </div>
+
+            <div class="social-links">
+                <h3>GitHub репозиторий проекта</h3>
+                <p>Исходный код доступен на GitHub:</p>
+                <a href="https://github.com/Evgeny65ok/Project-1" class="github-link" target="_blank">
+                    https://github.com/Evgeny65ok/Project-1
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Учебный сайт. Евгений Белевитин, МФЮА</p>
+            <p class="page-info" id="pageInfo"></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

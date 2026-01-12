@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог - Учебный сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🎓 Учебный сайт</h1>
+                <p>Евгений Белевитин | МФЮА</p>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="blog.html" class="active">Блог</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="blog">
+            <h2>📝 Блог проекта</h2>
+            
+            <div class="blog-posts">
+                <article class="post">
+                    <h3>🎉 Сайт запущен!</h3>
+                    <p class="post-date">15 декабря 2024</p>
+                    <p>Сегодня состоялся официальный запуск учебного сайта. Была создана базовая структура, добавлены 4 основные страницы и настроен GitHub Pages.</p>
+                </article>
+
+                <article class="post">
+                    <h3>🌙 Добавлена темная тема</h3>
+                    <p class="post-date">16 декабря 2024</p>
+                    <p>Реализована функция переключения между светлой и темной темами. Настройки сохраняются в LocalStorage.</p>
+                </article>
+
+                <article class="post">
+                    <h3>📊 Счетчики посещений</h3>
+                    <p class="post-date">17 декабря 2024</p>
+                    <p>Добавлены счетчики посещений: сессионный и общий. Данные сохраняются в LocalStorage браузера.</p>
+                </article>
+
+                <article class="post">
+                    <h3>📱 Адаптивный дизайн</h3>
+                    <p class="post-date">18 декабря 2024</p>
+                    <p>Завершена работа над адаптивным дизайном. Сайт теперь корректно отображается на мобильных устройствах и планшетах.</p>
+                </article>
+            </div>
+
+            <div class="add-post">
+                <h3>Добавить новую запись</h3>
+                <input type="text" id="postTitle" placeholder="Заголовок">
+                <textarea id="postContent" placeholder="Текст записи" rows="3"></textarea>
+                <button onclick="addBlogPost()">Добавить запись</button>
+                <button onclick="clearBlogPosts()">Очистить все записи</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Учебный сайт. Евгений Белевитин, МФЮА</p>
+            <p class="page-info" id="pageInfo"></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

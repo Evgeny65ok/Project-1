@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный сайт - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🎓 Учебный сайт</h1>
+                <p>Евгений Белевитин | МФЮА</p>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Добро пожаловать на мой учебный сайт!</h2>
+            <p>Я, <strong>Евгений Белевитин</strong>, студент МФЮА. Этот сайт создан в рамках учебного проекта.</p>
+            <p>Здесь я практикую навыки веб-разработки: HTML, CSS, JavaScript и работу с Git.</p>
+        </section>
+
+        <section class="features">
+            <h2>Возможности сайта</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📱 Адаптивный дизайн</h3>
+                    <p>Сайт корректно отображается на всех устройствах</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Темная тема</h3>
+                    <p>Переключайтесь между светлой и темной темами</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💾 LocalStorage</h3>
+                    <p>Данные сохраняются в браузере</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🚀 GitHub Pages</h3>
+                    <p>Сайт размещен на бесплатном хостинге</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <h2>Статистика посещений</h2>
+            <div class="counter">
+                <p>Посещений на этой сессии: <span id="sessionCounter">0</span></p>
+                <p>Всего посещений: <span id="totalCounter">0</span></p>
+                <button onclick="resetCounters()">Сбросить счетчики</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Учебный сайт. Евгений Белевитин, МФЮА</p>
+            <p>Сайт создан для практики Git и GitHub Pages</p>
+            <p class="page-info" id="pageInfo"></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
